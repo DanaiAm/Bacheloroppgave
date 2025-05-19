@@ -261,4 +261,16 @@
     font-size: 14px;
     cursor: pointer;
   }
+
+  .bilde-container {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+  }
+       
+  .profilbilde-visning {
+    display: none;
+    max-width: 150px;
+    border-radius: 8px;
+  }
+
   

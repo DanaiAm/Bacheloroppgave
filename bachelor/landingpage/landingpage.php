@@ -16,7 +16,6 @@ require_once("../landingpage/antall_kunder.php");
 
   <!-- Egne stilark -->
   <link rel="stylesheet" href="../css/landingpage.css">
-  <link rel="stylesheet" href="../css/header.css">
 
   <!-- JavaScript -->
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>

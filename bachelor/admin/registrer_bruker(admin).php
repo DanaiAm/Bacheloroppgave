@@ -53,17 +53,6 @@ $profilbildePathWithCacheBuster = $profilbildePath . '?v=' . time();
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="../redirectToPage.js"></script>
-    <style>
-        .bilde-container {
-            margin-top: 1rem;
-            padding-left: 1.5rem;
-        }
-        .profilbilde-visning {
-            max-width: 150px;
-            border-radius: 8px;
-            display: none;
-        }
-    </style>
 </head>
 <body>
 
