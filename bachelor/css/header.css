@@ -1,0 +1,80 @@
+/* =========================
+   Header-styling
+   ========================= */
+   header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 58px;
+    background: #0f2a52;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  /* =========================
+     Profilknapp og brukerikon
+     ========================= */
+  .profile {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .profile:hover {
+    background-color: #0f2a526b;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #aa5d5d;
+  }
+  
+  /* =========================
+     Dropdown-meny
+     ========================= */
+  .hidden {
+    display: none;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    right: -1px;
+    z-index: 9999;
+    padding: 10px;
+    min-width: 160px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    pointer-events: auto;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  

@@ -1,0 +1,456 @@
+/* =============================== */
+/* 1. Basislayout og global stil */
+/* =============================== */
+
+body {
+  background-color: #0A1B34;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  color: white;
+  overflow-y: scroll;
+}
+
+/* =============================== */
+/* 2. Hovedcontainere og struktur */
+/* =============================== */
+
+.headline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 84%;
+  margin: 44px auto;
+}
+
+.sticky-header {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+  height: 654px;
+  margin: auto;
+  margin-bottom: 100px;
+  border-radius: 2px;
+  background: transparent;
+  overflow-y: scroll;
+}
+
+/* =============================== */
+/* 3. Søkefelt og visningsvalg */
+/* =============================== */
+
+.visning-sok-wrapper {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 0 22px 0;
+}
+
+#sokefelt {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: white;
+  color: #0a0a0a;
+}
+
+.toggle {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 8px 12px;
+  color: white;
+  transition: background 0.3s;
+}
+
+.selected {
+  background-color: white;
+  color: black;
+}
+
+/* =============================== */
+/* 4. Nedtrekksmeny og knapper */
+/* =============================== */
+
+.button-container {
+  display: flex;
+  gap: 8px;
+}
+
+.primaryBTN {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 2px;
+  background-color: #D62E40;
+  color: white;
+  cursor: pointer;
+}
+
+.primaryBTN:hover {
+  background-color: #781a24;
+}
+
+.secondaryBTN {
+  display: flex;
+  padding: 8px 12px;
+  border: 2px solid white;
+  border-radius: 2px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.secondaryBTN:hover {
+  background-color: white;
+  color: #235f9f;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.dropdown-btn {
+  vertical-align: middle;
+  padding: 8px 12px;
+  border: 2px solid white;
+  border-radius: 2px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-btn.active {
+  font-style: normal;
+  color: black;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* =============================== */
+/* 5. Tabellvisning */
+/* =============================== */
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: white;
+  color: black;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #eeeeee;
+  font-weight: bold;
+}
+
+/* =============================== */
+/* 6. Kort/grid-visning */
+/* =============================== */
+
+.kundeprofil-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.kundeprofil-kort {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 264px;
+  padding: 1rem;
+  border-radius: 2px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+.kundeprofil-kort:hover {
+  transform: translateY(-5px);
+}
+
+.kundeprofil-bilde {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 0.75rem;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.kundeprofil-navn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.kort-knapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.kundeprofil-kort:hover .kort-knapper {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.placeholder-kort {
+  background: transparent;
+  border: 2px dashed #ccc;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.slett-kort-btn,
+.rediger-kort-btn {
+  position: absolute;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: white;
+  z-index: 10;
+}
+
+.slett-kort-btn {
+  right: 10px;
+  background-color: #e53935;
+}
+
+.slett-kort-btn:hover {
+  background-color: #c62828;
+}
+
+.rediger-kort-btn {
+  left: 10px;
+  background-color: #1976d2;
+}
+
+.rediger-kort-btn:hover {
+  background-color: #125aa6;
+}
+
+/* =============================== */
+/* 7. Modal for detaljert visning */
+/* =============================== */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 50;
+  overflow: auto;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: #0f1c2e;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* =============================== */
+/* 8. Diverse tilleggselementer */
+/* =============================== */
+
+.pil {
+  font-size: 20px;
+  vertical-align: middle;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.adminrettigheter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+  color: white;
+}
+
+/* =============================== */
+/* 9. Filter popup og skjema */
+/* =============================== */
+
+.filter-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  z-index: 300;
+}
+
+.filter-wrapper {
+  min-width: 600px;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 2px;
+  background: #ccc;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.filter-actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.filter-actions .sok {
+  border: none;
+  border-radius: 2px;
+  background-color: #D62E40;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-actions .sok:hover {
+  background-color: #781a24;
+}
+
+.postnr-range {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.postnr-range input {
+  width: 80px;
+  padding: 0.4rem;
+}
+
+.postnr-range span {
+  font-weight: bold;
+}
+
+#filterForm input {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: white;
+  color: #000;
+  font-family: inherit;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}

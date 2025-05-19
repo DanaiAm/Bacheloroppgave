@@ -1,0 +1,140 @@
+/* =========================
+   Grunnstil for nettsiden
+   ========================= */
+   body {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #0A1B34;
+  }
+  
+  /* =========================
+     Struktur: Container og overskrift
+     ========================= */
+  .container {
+    width: 84%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .headline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 84%;
+    max-width: 1200px;
+    margin: 34px auto;
+  }
+
+  .headline-container h1 {
+    padding: 4px;
+  }
+  
+  /* =========================
+     Knapper og ikoner
+     ========================= */
+  .primaryBTN {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 2px;
+    background-color: #D62E40;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .primaryBTN:hover {
+    background-color: #781a24;
+  }
+      
+  .secondaryBTN {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .secondaryBTN:hover {
+    background-color: white;
+    color: #0f1c2e;
+  }
+  
+  .pil {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  
+  /* =========================
+     Kortvisning for kundegrupper
+     ========================= */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 8px;
+  }
+  
+  .category-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+  
+  .card {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border-radius: 2px;
+    background-color: #FFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card .image-placeholder {
+    height: 160px;
+    margin-bottom: 16px;
+    background: #BEBEBE;
+  }
+  
+  .card h2 {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* =========================
+     Responsiv tilpasning
+     ========================= */
+  @media (max-width: 768px) {
+    .category-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

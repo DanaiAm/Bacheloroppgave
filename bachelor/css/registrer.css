@@ -1,0 +1,264 @@
+/* ========================== 
+   Basislayout 
+   ========================== */
+
+   body {
+    background-color: #0A1B34;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: white;
+    overflow-y: scroll;
+  } 
+  
+  /* =========================
+     Hovedstruktur og layout
+     ========================= */
+  
+  form#bedriftForm {
+    width: 84%;
+    padding: 8px;
+    margin: 0 auto;
+  }
+  
+  .headline-container {
+    display: flex;
+    gap: 10px;
+    width: 84%;
+    margin: 28px auto;
+    padding: 8px;
+  }
+
+  .headline-container h1 {
+    padding: 4px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .form-group-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+  }
+  
+  .form-left,
+  .form-right,
+  .form-middel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+  }
+  
+  .form-group {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  
+  .split-input {
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* =========================
+     Inputfelt og tekstområder
+     ========================= */
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: small;
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+  }
+  
+  input {
+    height: 40px;
+  }
+  
+  textarea {
+    height: calc(3 * 40px + 2 * 16px);
+  }
+  
+  .invisble {
+    opacity: 0;
+  }
+  
+  .checkbox-admin {
+    display: flex;
+    padding-bottom: 16px;
+  }
+  
+  .checkbox-admin input {
+    height: 40px;
+  }
+  
+  /* =========================
+     Knappestiler
+     ========================= */
+  
+  .secondaryBTN {
+    display: flex;
+    vertical-align: middle;
+    padding: 8px 12px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .secondaryBTN:hover {
+    background-color: white;
+    color: #235f9f;
+  }
+  
+  .primaryBTN {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 2px;
+    background-color: #D62E40;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .primaryBTN:hover {
+    background-color: #781a24;
+  }
+  
+  .fileinput {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .fileinput:hover {
+    background-color: rgb(118, 115, 115);
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 16px;
+  }
+  
+  .button-container button {
+    height: 40px;
+  }
+  
+  /* =========================
+     Ikoner og dropdowns
+     ========================= */
+  
+  .pil {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  
+  .icons {
+    font-size: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  .dropdown-btn {
+    vertical-align: middle;
+    padding: 8px 12px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dropdown-btn.active {
+    font-style: normal;
+    color: black;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* =========================
+     Forhåndsvisning av bilde
+     ========================= */
+  
+  .preview {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .preview-container {
+    margin-top: 8px;
+  }
+  
+  .thumbnail {
+    display: block;
+    max-width: 200px;
+  }
+  
+  .preview-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .remove-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
