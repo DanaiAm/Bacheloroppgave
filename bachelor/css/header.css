@@ -1,5 +1,5 @@
 /* =========================
-   Header-styling
+   1. Header-styling
    ========================= */
    header {
     display: flex;
@@ -19,7 +19,7 @@
   }
   
   /* =========================
-     Profilknapp og brukerikon
+     2. Profilknapp og brukerikon
      ========================= */
   .profile {
     position: relative;
@@ -49,7 +49,7 @@
   }
   
   /* =========================
-     Dropdown-meny
+     3. Dropdown-meny
      ========================= */
   .hidden {
     display: none;

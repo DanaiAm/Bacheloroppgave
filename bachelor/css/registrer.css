@@ -1,8 +1,8 @@
 /* ========================== 
-   Basislayout 
+   1. Basislayout 
    ========================== */
 
-   body {
+  body {
     background-color: #0A1B34;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -11,7 +11,7 @@
   } 
   
   /* =========================
-     Hovedstruktur og layout
+     2. Hovedstruktur og layout
      ========================= */
   
   form#bedriftForm {
@@ -73,7 +73,7 @@
   }
   
   /* =========================
-     Inputfelt og tekstområder
+     3. Inputfelt og tekstområder
      ========================= */
   
   input,
@@ -108,7 +108,7 @@
   }
   
   /* =========================
-     Knappestiler
+     4. Knappestiler
      ========================= */
   
   .secondaryBTN {
@@ -165,7 +165,7 @@
   }
   
   /* =========================
-     Ikoner og dropdowns
+     5. Ikoner og dropdowns
      ========================= */
   
   .pil {
@@ -225,7 +225,7 @@
   }
   
   /* =========================
-     Forhåndsvisning av bilde
+     6. Forhåndsvisning av bilde
      ========================= */
   
   .preview {

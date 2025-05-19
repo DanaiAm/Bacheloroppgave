@@ -1,5 +1,5 @@
 /* =========================
-   Grunnstil for nettsiden
+   1. Grunnstil for nettsiden
    ========================= */
    body {
     font-family: 'Montserrat', sans-serif;
@@ -10,7 +10,7 @@
   }
   
   /* =========================
-     Struktur: Container og overskrift
+     2. Struktur: Container og overskrift
      ========================= */
   .container {
     width: 84%;
@@ -32,7 +32,7 @@
   }
   
   /* =========================
-     Knapper og ikoner
+     3. Knapper og ikoner
      ========================= */
   .primaryBTN {
     width: 100%;
@@ -69,7 +69,7 @@
   }
   
   /* =========================
-     Kortvisning for kundegrupper
+     4. Kortvisning for kundegrupper
      ========================= */
   .card-container {
     display: flex;
@@ -123,7 +123,7 @@
   }
   
   /* =========================
-     Responsiv tilpasning
+     4. Responsiv tilpasning
      ========================= */
   @media (max-width: 768px) {
     .category-row {

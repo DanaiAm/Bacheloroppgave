@@ -1,8 +1,8 @@
-/* =============================== */
-/* 1. Grunnstil for nettsiden */
-/* =============================== */
+  /* =============================== 
+     1. Grunnstil for nettsiden 
+     =============================== */
 
-body {
+  body {
     background-color: #0A1B34;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -10,9 +10,9 @@ body {
     color: #ffffff;
   }
   
-  /* =============================== */
-  /* 2. Hovedcontainer for profil */
-  /* =============================== */
+  /* ===============================
+     2. Hovedcontainer for profil 
+     =============================== */
   
   .profil-container {
     display: flex;
@@ -20,9 +20,9 @@ body {
     margin-top: 40px;
   }
   
-  /* =============================== */
-  /* 3. Profilkort med info og bilde */
-  /* =============================== */
+  /* =============================== 
+    3. Profilkort med info og bilde 
+     =============================== */
   
   .profil-card {
     width: 350px;
@@ -32,9 +32,9 @@ body {
     text-align: center;
   }
   
-  /* =============================== */
-  /* 4. Bildeinnpakning og utforming */
-  /* =============================== */
+  /* =============================== 
+    4. Bildeinnpakning og utforming 
+     =============================== */
   
   .profil-image {
     margin-bottom: 20px;
@@ -48,9 +48,9 @@ body {
     object-fit: cover;
   }
   
-  /* =============================== */
-  /* 5. Tekstlig info under bilde */
-  /* =============================== */
+  /* ===============================
+    5. Tekstlig info under bilde 
+     =============================== */
   .profil-button{
     display: flex;
     justify-content: center;
@@ -62,18 +62,18 @@ body {
     color: white;
   }
   
-  /* =============================== */
-  /* 6. Responsiv tilpasning */
-  /* =============================== */
+  /* ===============================
+    6. Responsiv tilpasning
+     =============================== */
   @media (max-width: 768px) {
     .profil-card {
       width: 90%;
     }
   }
   
-  /* =============================== */
-  /* 7. Knapper */
-  /* =============================== */
+  /* =============================== 
+   7. Knappestiler
+     =============================== */
   .secondaryBTN {
     display: flex;
     vertical-align: middle;

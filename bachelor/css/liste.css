@@ -1,6 +1,6 @@
-/* =============================== */
-/* 1. Basislayout og global stil */
-/* =============================== */
+/* ===============================
+   1. Basislayout og global stil 
+   =============================== */
 
 body {
   background-color: #0A1B34;
@@ -10,9 +10,9 @@ body {
   overflow-y: scroll;
 }
 
-/* =============================== */
-/* 2. Hovedcontainere og struktur */
-/* =============================== */
+/* =============================== 
+   2. Hovedcontainere og struktur 
+   =============================== */
 
 .headline-container {
   display: flex;
@@ -41,9 +41,9 @@ body {
   overflow-y: scroll;
 }
 
-/* =============================== */
-/* 3. Søkefelt og visningsvalg */
-/* =============================== */
+/* ===============================  
+   3. Søkefelt og visningsvalg 
+   =============================== */
 
 .visning-sok-wrapper {
   position: sticky;
@@ -86,9 +86,9 @@ body {
   color: black;
 }
 
-/* =============================== */
-/* 4. Nedtrekksmeny og knapper */
-/* =============================== */
+/* =============================== 
+    4. Nedtrekksmeny og knapper 
+   =============================== */
 
 .button-container {
   display: flex;
@@ -171,9 +171,9 @@ body {
   display: block;
 }
 
-/* =============================== */
-/* 5. Tabellvisning */
-/* =============================== */
+/* =============================== 
+   5. Tabellvisning 
+   =============================== */
 
 table {
   width: 100%;
@@ -194,9 +194,9 @@ th {
   font-weight: bold;
 }
 
-/* =============================== */
-/* 6. Kort/grid-visning */
-/* =============================== */
+/* =============================== 
+   6. Kort/grid-visning  
+   =============================== */
 
 .kundeprofil-grid {
   display: grid;
@@ -305,9 +305,9 @@ th {
   background-color: #125aa6;
 }
 
-/* =============================== */
-/* 7. Modal for detaljert visning */
-/* =============================== */
+/* ===============================
+   7. Modal for detaljert visning 
+   =============================== */
 
 .modal {
   position: fixed;
@@ -347,9 +347,9 @@ th {
   display: none;
 }
 
-/* =============================== */
-/* 8. Diverse tilleggselementer */
-/* =============================== */
+/* ===============================  
+   8. Diverse tilleggselementer  
+   =============================== */
 
 .pil {
   font-size: 20px;
@@ -367,9 +367,9 @@ th {
   color: white;
 }
 
-/* =============================== */
-/* 9. Filter popup og skjema */
-/* =============================== */
+/* =============================== 
+   9. Filter popup og skjema  
+   =============================== */
 
 .filter-modal {
   position: fixed;
